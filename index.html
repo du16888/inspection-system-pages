@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第三方项目检查系统 · 原型</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;color:#1f2937}
+  .wrap{width:100%;max-width:920px}
+  .hero{text-align:center;color:#fff;margin-bottom:32px}
+  .hero h1{font-size:32px;font-weight:700;margin-bottom:10px;letter-spacing:1px}
+  .hero p{font-size:15px;opacity:.92;line-height:1.7}
+  .badge{display:inline-block;padding:4px 12px;background:rgba(255,255,255,.2);border-radius:999px;font-size:12px;margin-top:12px;backdrop-filter:blur(8px)}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  @media(max-width:680px){.grid{grid-template-columns:1fr}}
+  .card{background:#fff;border-radius:16px;padding:28px;box-shadow:0 20px 50px rgba(0,0,0,.18);transition:transform .2s,box-shadow .2s;text-decoration:none;color:inherit;display:block}
+  .card:hover{transform:translateY(-4px);box-shadow:0 28px 60px rgba(0,0,0,.25)}
+  .icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:18px}
+  .ic-admin{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff}
+  .ic-mobile{background:linear-gradient(135deg,#11998e,#38ef7d);color:#fff}
+  .card h2{font-size:20px;font-weight:600;margin-bottom:8px}
+  .card .sub{font-size:13px;color:#6b7280;margin-bottom:14px}
+  .card ul{list-style:none;font-size:13px;color:#4b5563;line-height:1.9}
+  .card ul li::before{content:"·";margin-right:6px;color:#9ca3af}
+  .arrow{margin-top:16px;color:#667eea;font-size:13px;font-weight:600}
+  .meta{margin-top:28px;text-align:center;color:rgba(255,255,255,.85);font-size:12px;line-height:1.7}
+  .meta strong{color:#fff}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1>第三方项目检查系统</h1>
+      <p>物管小区品质服务检查 · 4 套标准 · 400 个项目 · 68 项检查指标</p>
+      <span class="badge">前端原型 · Demo</span>
+    </div>
+    <div class="grid">
+      <a class="card" href="inspection-admin.html">
+        <div class="icon ic-admin">⚙</div>
+        <h2>管理后台</h2>
+        <div class="sub">总部品质人员使用</div>
+        <ul>
+          <li>统计看板:得分 / 趋势 / 雷达 / 分布</li>
+          <li>检查标准:金百合 / 向日葵 / 郁金香 / 紫荆花</li>
+          <li>检查明细:任务派发与审核</li>
+          <li>项目权限:400 个项目人员配置</li>
+        </ul>
+        <div class="arrow">进入管理后台 →</div>
+      </a>
+      <a class="card" href="inspection-mobile.html">
+        <div class="icon ic-mobile">📱</div>
+        <h2>移动端</h2>
+        <div class="sub">第三方检查员 + 项目经理使用</div>
+        <ul>
+          <li>检查员:接收任务 → 录扣分 + 拍照</li>
+          <li>项目经理:查看报告 → 签字 / 退回</li>
+          <li>5 大模块:环境 / 安全 / 设备 / 绿化 / 客服</li>
+          <li>状态流:待开始 → 检查中 → 已提交 → 已完成</li>
+        </ul>
+        <div class="arrow">进入移动端 →</div>
+      </a>
+    </div>
+    <div class="meta">
+      <strong>评分规则</strong> 项目总分 = Σ(各模块得分率 × 权重) × 100<br>
+      环境卫生 30% · 安全管理 15% · 设施设备 20% · 绿化养护 15% · 客户服务 20%
+    </div>
+  </div>
+</body>
+</html>
