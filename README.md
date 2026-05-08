@@ -4,9 +4,9 @@
 
 ## 在线预览
 
-- 入口: https://du16888.github.io/inspection-system/
-- 管理后台: https://du16888.github.io/inspection-system/inspection-admin.html
-- 移动端: https://du16888.github.io/inspection-system/inspection-mobile.html
+- 入口: https://du16888.github.io/inspection-system-pages/
+- 管理后台: https://du16888.github.io/inspection-system-pages/inspection-admin.html
+- 移动端: https://du16888.github.io/inspection-system-pages/inspection-mobile.html
 
 ## 简介
 
